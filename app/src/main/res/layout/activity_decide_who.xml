@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DecideWhoActivity">
+    <ImageView
+        android:src="@drawable/taxi_splash_screen"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+    <TextView
+        android:text="Jitney App"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        />
+    <Button
+        android:id="@+id/passengerButton"
+        android:text="I am a Passenger"
+        android:onClick="goToPassengerLogIn"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        />
+
+    <Button
+        android:id="@+id/driverButton"
+        android:text="I am a Driver"
+        android:onClick="goToDriverLogIn"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorPrimary"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developed By Anuj Goel"
+        android:background="@color/cardview_light_background"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>
+</FrameLayout>
